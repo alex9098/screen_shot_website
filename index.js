@@ -31,7 +31,9 @@ async function screenshotTake(url) {
     //    console.log('success');
 }
 
-
+app.get("/",(req,res)=>{
+    res.send("hello")
+})
 app.post("/mobile",  async (req,res)=>{
     // const {id}= req.params
     console.log('start');
